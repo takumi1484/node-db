@@ -1,3 +1,1 @@
-exports = {
-    localPort:3000,
-};
+exports.localPort = 3000;

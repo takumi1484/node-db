@@ -1,4 +1,4 @@
-let config = require('./config');
+let config = require('./config.js');
 let mysql = require('mysql');
 
 
@@ -9,4 +9,4 @@ var server = http.createServer(function (request, response) {
     response.write('Hello World\n'); // レスポンスボディに「Hello World」を書き込み
     response.end(); // レスポンス送信を完了する
 });
-server.listen(process.env.PORT || 8080);  //heroku等に挙げたときはそちらのenvを参照、テスト時は8080番ポートで待ち受け
+server.listen(process.env.PORT || config.localPort);  //heroku等に挙げたときはそちらのenvを参照、テスト時は8080番ポートで待ち受け
