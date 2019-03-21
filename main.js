@@ -1,5 +1,5 @@
 let config = require('./config.js');
-let mysql = require('mysql');
+// let mysql = require('mysql');
 
 
 var http = require('http'); //httpモジュール呼び出し
